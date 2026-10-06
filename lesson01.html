@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>この講座について／Webデザインの基礎｜WEBデザインことはじめ</title>
+<meta name="description" content="バナーで伝えること、Web用データの3つの決まり、見本どおりのバナー作り">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Maru+Gothic:wght@500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="inner">
+    <a class="site-name" href="./">
+      <span class="mark"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 1.5v12l3.3-3 2.2 4.6 2-1-2.2-4.5H13z"/></svg></span>
+      <span>WEBデザインことはじめ</span>
+    </a>
+    <nav class="head-nav" aria-label="サイト">
+      <a href="./">トップ</a>
+      <a href="./#lessons" aria-current="page">テーマ一覧</a>
+      <a href="./#links">参考リンク</a>
+    </nav>
+  </div>
+</header>
+
+<div class="layout">
+
+  <!-- ===== 目次 ===== -->
+  <details class="toc" open>
+    <summary><span class="dot"></span>WEBデザインことはじめ<span class="toggle"></span></summary>
+    <div class="toc-body">
+      <a class="toc-top" href="./">トップページ</a>
+
+      <div class="toc-item is-current">
+        <a class="toc-head" href="lesson01.html" aria-current="page"><span class="toc-no">01</span><span class="toc-title">この講座について／Webデザインの基礎</span></a>
+        <ul class="toc-parts">
+          <li><a href="#about"><span class="n">1</span><span>この講座について</span></a></li>
+          <li><a href="#flow"><span class="n">2</span><span>Webサイト制作の流れ</span></a></li>
+          <li><a href="#banner"><span class="n">3</span><span>バナーで伝える3つ</span></a></li>
+          <li><a href="#role"><span class="n">4</span><span>バナーの役割</span></a></li>
+          <li><a href="#size"><span class="n">5</span><span>バナーの大きさ</span></a></li>
+          <li><a href="#see"><span class="n">6</span><span>いいバナーを見る</span></a></li>
+          <li><a href="#data"><span class="n">7</span><span>Web用データの決まり</span></a></li>
+          <li><a href="#format"><span class="n">8</span><span>画像の形式</span></a></li>
+          <li><a href="#make"><span class="n">9</span><span>見本どおりに作る</span></a></li>
+        </ul>
+      </div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">02</span><span class="toc-title">バナー制作① 文字で伝える</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">03</span><span class="toc-title">バナー制作② 写真で伝える</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">04</span><span class="toc-title">バナー制作③ サイズ展開</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">05</span><span class="toc-title">LP制作① 構成を知る</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">06</span><span class="toc-title">LP制作② ワイヤーフレーム</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">07</span><span class="toc-title">LP制作③ デザイン</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">08</span><span class="toc-title">LP制作④ 仕上げ</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">09</span><span class="toc-title">Webサイト制作① 企画</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">10</span><span class="toc-title">Webサイト制作② 設計</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">11</span><span class="toc-title">Webサイト制作③ トップページ</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">12</span><span class="toc-title">Webサイト制作④ 下層ページ・スマートフォン版</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">13</span><span class="toc-title">Webサイト制作⑤ 仕上げ</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">14</span><span class="toc-title">コーディング体験① HTMLとCSSの仕組み</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">15</span><span class="toc-title">コーディング体験② デザインをコードで再現</span></span></div>
+    </div>
+  </details>
+
+  <!-- ===== 本文 ===== -->
+  <main class="main">
+    <nav class="crumbs" aria-label="パンくずリスト"><a href="./">トップ</a><span>01 この講座について／Webデザインの基礎</span></nav>
+
+    <header class="page-head">
+      <span class="no">01</span>
+      <h1 class="page-title">この講座について／Webデザインの基礎</h1>
+    </header>
+    <p class="dates">最終更新日：2026/10/06</p>
+
+    <!-- ===== この講座について ===== -->
+    <section class="part" id="about">
+      <p class="part-label">この講座について</p>
+      <h2 class="msg">作りながらWebデザインを学ぶ</h2>
+      <ul class="tiles">
+        <li><span class="k">01〜04</span><b>バナー</b><p>一目で伝える</p></li>
+        <li><span class="k">05〜08</span><b>LP</b><p>1枚のページで順番に伝える</p></li>
+        <li><span class="k">09〜13</span><b>Webサイト</b><p>いくつものページで伝える</p></li>
+        <li><span class="k">14〜15</span><b>コード</b><p>デザインをブラウザで表示する</p></li>
+      </ul>
+    </section>
+
+    <!-- ===== 流れ ===== -->
+    <section class="part" id="flow">
+      <p class="part-label">流れ</p>
+      <h2 class="msg">Webサイト制作の流れ</h2>
+
+      <figure class="fig">
+        <ol class="flow">
+          <li><b>企画</b><span>だれに何を伝えるか決める</span><em>05・09</em></li>
+          <li><b>ワイヤーフレーム</b><span>骨組みを作る</span><em>06・10</em></li>
+          <li><b>デザイン</b><span>見た目を作る</span><em>07〜08・11〜13</em></li>
+          <li><b>コード</b><span>ブラウザで表示できるようにする</span><em>14〜15</em></li>
+          <li><b>公開</b><span>インターネットにのせる</span></li>
+        </ol>
+      </figure>
+    </section>
+
+    <!-- ===== バナー ===== -->
+    <section class="part" id="banner">
+      <p class="part-label">バナー</p>
+      <h2 class="msg">バナーで伝えるのは3つだけ</h2>
+
+      <figure class="fig">
+        <div class="duo">
+          <div class="phone">
+            <div class="ph-bar" aria-hidden="true"><i></i><span></span></div>
+            <div class="ph-body">
+              <span class="ph-h" aria-hidden="true"></span>
+              <span class="ph-h is-short" aria-hidden="true"></span>
+              <span class="ph-line" aria-hidden="true"></span>
+              <span class="ph-line is-short" aria-hidden="true"></span>
+              <div class="slot">
+                <span class="slot-label">広告</span>
+                <div class="bn" role="img" aria-label="バナー。1 イベントの名前「森のパン市」、2 日にち「11月3日 火曜・祝日」、3「くわしく見る」ボタン">
+                  <span class="bn-sun"></span>
+                  <span class="bn-row"><span class="bn-title">森のパン市</span><span class="bn-mark">1</span></span>
+                  <span class="bn-row"><span class="bn-date"><b>11.3</b>火・祝</span><span class="bn-mark">2</span></span>
+                  <span class="bn-row"><span class="bn-btn">くわしく見る</span><span class="bn-mark">3</span></span>
+                </div>
+              </div>
+              <span class="ph-line" aria-hidden="true"></span>
+              <span class="ph-line is-short" aria-hidden="true"></span>
+            </div>
+          </div>
+          <ol class="three">
+            <li><b>名前</b></li>
+            <li><b>日にち</b></li>
+            <li><b>ボタン</b><span>押すとくわしいページに進む</span></li>
+          </ol>
+        </div>
+      </figure>
+    </section>
+
+    <!-- ===== バナーの役割 ===== -->
+    <section class="part" id="role">
+      <p class="part-label">バナーの役割</p>
+      <h2 class="msg">バナーを押すとページに進む</h2>
+
+      <figure class="fig">
+        <div class="chain">
+          <div class="chain-cell">
+            <svg viewBox="0 0 120 100" aria-hidden="true" focusable="false">
+              <rect x="12" y="10" width="96" height="80" class="g-accent"/>
+              <circle cx="92" cy="26" r="12" class="g-sun"/>
+              <rect x="22" y="44" width="52" height="8" rx="2" class="g-paper"/>
+              <rect x="22" y="57" width="36" height="8" rx="2" class="g-paper"/>
+              <rect x="22" y="72" width="40" height="11" rx="5.5" class="g-paper"/>
+            </svg>
+            <b>バナー</b>
+            <span>気づいてもらう</span>
+          </div>
+          <span class="chain-arrow" aria-hidden="true">→</span>
+          <div class="chain-cell">
+            <svg viewBox="0 0 120 100" aria-hidden="true" focusable="false">
+              <rect x="34" y="4" width="52" height="92" rx="6" class="g-sheet"/>
+              <rect x="40" y="10" width="40" height="22" rx="3" class="g-tint"/>
+              <rect x="40" y="38" width="30" height="5" rx="2.5" class="g-ink"/>
+              <rect x="40" y="48" width="40" height="4" rx="2" class="g-rule"/>
+              <rect x="40" y="56" width="40" height="4" rx="2" class="g-rule"/>
+              <rect x="40" y="64" width="26" height="4" rx="2" class="g-rule"/>
+              <rect x="40" y="76" width="40" height="11" rx="5.5" class="g-accent"/>
+            </svg>
+            <b>LP</b>
+            <span>くわしく伝える</span>
+          </div>
+          <span class="chain-arrow" aria-hidden="true">→</span>
+          <div class="chain-cell">
+            <svg viewBox="0 0 120 100" aria-hidden="true" focusable="false">
+              <circle cx="60" cy="50" r="32" class="g-accent"/>
+              <path d="M46 51l10 10 19-21" class="g-check"/>
+            </svg>
+            <b>申し込み</b>
+            <span>行動してもらう</span>
+          </div>
+        </div>
+      </figure>
+    </section>
+
+    <!-- ===== バナーの大きさ ===== -->
+    <section class="part" id="size">
+      <p class="part-label">バナーの大きさ</p>
+      <h2 class="msg">バナーの大きさは決まっている</h2>
+
+      <figure class="fig">
+        <div class="sizes">
+          <div class="size-group">
+            <p class="size-kind">Google広告</p>
+            <div class="size"><span class="box is-rect"></span><b>レクタングル</b><span class="px">300 × 250</span></div>
+            <div class="size"><span class="box is-mobile"></span><b>モバイル（大）</b><span class="px">320 × 100</span></div>
+            <div class="size"><span class="box is-big"></span><b>ビッグバナー</b><span class="px">728 × 90</span></div>
+          </div>
+          <div class="size-group">
+            <p class="size-kind">SNS</p>
+            <div class="size"><span class="box is-square"></span><b>正方形</b><span class="px">1080 × 1080</span></div>
+          </div>
+        </div>
+      </figure>
+    </section>
+
+    <!-- ===== 参考 ===== -->
+    <section class="part" id="see">
+      <p class="part-label">参考</p>
+      <h2 class="msg">いいバナーをたくさん見よう</h2>
+
+      <ul class="links">
+        <li><a href="https://design-library.jp/" target="_blank" rel="noopener">BANNER LIBRARY</a></li>
+        <li><a href="https://retrobanner.net/" target="_blank" rel="noopener">Retrobanner</a></li>
+        <li><a href="https://banner-hiroba.com/" target="_blank" rel="noopener">バナー広場</a></li>
+        <li><a href="https://bannnner.com/" target="_blank" rel="noopener">Bannnner.com</a></li>
+      </ul>
+    </section>
+
+    <!-- ===== Web用データ ===== -->
+    <section class="part" id="data">
+      <p class="part-label">Web用データ</p>
+      <h2 class="msg">Web用データの決まりは3つ</h2>
+
+      <div class="rules">
+        <article class="rule">
+          <div class="rule-text">
+            <span class="rule-no">1</span>
+            <h3>単位はピクセル</h3>
+            <p>画面の大きさは見る人によってちがいます。ミリではなくピクセル（px）で作ります。</p>
+          </div>
+          <div class="rule-fig">
+            <svg viewBox="0 0 320 140" role="img" aria-label="A4の紙が1枚と、大きさのちがう3つの画面（スマートフォン、タブレット、パソコン）">
+              <rect x="18" y="14" width="80" height="112" class="g-sheet"/>
+              <text x="58" y="66" class="g-text">A4</text>
+              <text x="58" y="84" class="g-sub">210 × 297 mm</text>
+              <rect x="128" y="62" width="32" height="64" rx="7" class="g-screen"/>
+              <rect x="172" y="44" width="58" height="82" rx="8" class="g-screen"/>
+              <rect x="242" y="58" width="64" height="46" rx="5" class="g-screen"/>
+              <path d="M274 104v16M260 122h28" class="g-line"/>
+            </svg>
+          </div>
+        </article>
+
+        <article class="rule">
+          <div class="rule-text">
+            <span class="rule-no">2</span>
+            <h3>色はRGB</h3>
+            <p>画面は光で色を見せます。インクのCMYKではなくRGBで作ります。</p>
+          </div>
+          <div class="rule-fig">
+            <svg viewBox="0 0 320 160" role="img" aria-label="左は光の3色（赤・緑・青）。重なったところが白くなる。右はインクの3色（シアン・マゼンタ・イエロー）。重なったところが黒っぽくなる">
+              <g class="g-blend g-rgb">
+                <rect x="12" y="10" width="140" height="120" rx="14" class="g-dark"/>
+                <circle cx="66" cy="56" r="30" class="g-r"/>
+                <circle cx="98" cy="56" r="30" class="g-g"/>
+                <circle cx="82" cy="86" r="30" class="g-b"/>
+              </g>
+              <g class="g-blend g-cmy">
+                <rect x="168" y="10" width="140" height="120" rx="14" class="g-sheet"/>
+                <circle cx="222" cy="56" r="30" class="g-c"/>
+                <circle cx="254" cy="56" r="30" class="g-m"/>
+                <circle cx="238" cy="86" r="30" class="g-y"/>
+              </g>
+              <text x="82" y="152" class="g-text">光（RGB）</text>
+              <text x="238" y="152" class="g-text">インク（CMYK）</text>
+            </svg>
+          </div>
+        </article>
+
+        <article class="rule">
+          <div class="rule-text">
+            <span class="rule-no">3</span>
+            <h3>2倍の大きさでも書き出す</h3>
+            <p>細かい画面では2倍の大きさの画像がくっきり見えます。</p>
+          </div>
+          <div class="rule-fig">
+            <svg viewBox="0 0 320 124" role="img" aria-label="ふつうの画面は、1ピクセルを1つの点で表示する。細かい画面は、1ピクセルを4つの点で表示する">
+          <rect x="50" y="10" width="64" height="64" class="g-px"/>
+          <text x="82" y="98" class="g-text">ふつうの画面</text>
+          <text x="82" y="116" class="g-sub">1ピクセル ＝ 1つの点</text>
+          <rect x="206" y="10" width="64" height="64" class="g-px"/>
+          <path d="M238 10v64M206 42h64" class="g-line"/>
+          <text x="238" y="98" class="g-text">細かい画面</text>
+          <text x="238" y="116" class="g-sub">1ピクセル ＝ 4つの点</text>
+        </svg>
+          </div>
+        </article>
+      </div>
+
+      <div class="ref">
+        <p class="ref-h">Illustratorの設定</p>
+        <div class="ref-cols">
+          <div class="ref-col">
+            <p class="ref-k">新しく作るとき</p>
+            <dl class="spec">
+              <div><dt>種類</dt><dd>Web</dd></div>
+              <div><dt>大きさ</dt><dd>300 × 250 px</dd></div>
+              <div><dt>カラーモード</dt><dd>RGBカラー</dd></div>
+            </dl>
+          </div>
+          <div class="ref-col">
+            <p class="ref-k">書き出すとき</p>
+            <dl class="spec">
+              <div><dt>メニュー</dt><dd>ファイル → 書き出し → スクリーン用に書き出し</dd></div>
+              <div><dt>拡大・縮小</dt><dd>1x と 2x</dd></div>
+              <div><dt>形式</dt><dd>PNG</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 画像の形式 ===== -->
+    <section class="part" id="format">
+      <p class="part-label">画像の形式</p>
+      <h2 class="msg">画像は軽く作る</h2>
+      <p class="say">重い画像は表示に時間がかかります。中身に合った形式を選ぶと軽くなります。</p>
+
+      <div class="tbl-wrap">
+        <table class="tbl">
+          <thead>
+            <tr><th scope="col">形式</th><th scope="col">向いているもの</th><th scope="col">透明</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">JPG</th><td>写真</td><td>できない</td></tr>
+            <tr><th scope="row">PNG</th><td>文字や図が中心のもの</td><td>できる</td></tr>
+            <tr><th scope="row">SVG</th><td>ロゴやアイコン</td><td>できる</td></tr>
+            <tr><th scope="row">WebP</th><td>写真にも図にも使える軽い形式</td><td>できる</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="aside">Google広告の画像バナーは150KBまでと決まっています。</p>
+
+      <details class="more">
+        <summary>出典を見る</summary>
+        <ul class="links">
+          <li><a href="https://support.google.com/google-ads/answer/1722096?hl=ja" target="_blank" rel="noopener">アップロード型ディスプレイ広告の仕様</a><span class="src">Google 広告 ヘルプ</span></li>
+          <li><a href="https://developer.mozilla.org/ja/docs/Web/Media/Guides/Formats/Image_types" target="_blank" rel="noopener">画像ファイルの種類と形式ガイド</a><span class="src">MDN</span></li>
+          <li><a href="https://web.dev/articles/high-dpi?hl=ja" target="_blank" rel="noopener">可変ピクセル密度向けの高 DPI 画像</a><span class="src">web.dev（Google）</span></li>
+          <li><a href="https://helpx.adobe.com/jp/illustrator/using/collect-assets-export-for-screens.html" target="_blank" rel="noopener">アセットの収集と一括書き出し</a><span class="src">Adobe</span></li>
+        </ul>
+      </details>
+    </section>
+
+    <!-- ===== 見本どおりに作る ===== -->
+    <section class="part" id="make">
+      <p class="part-label">やってみよう</p>
+      <h2 class="msg">見本どおりに作ってみよう</h2>
+
+      <figure class="fig">
+        <div class="remake">
+          <img class="sample" src="images/sample-banner.webp" width="300" height="250" alt="見本のバナー。KAMATA GARDEN TERRACE、2027年7月17日 土曜オープン、営業時間 11時から17時、詳しく見るボタン。青空とクリームソーダの写真">
+          <dl class="spec">
+            <div><dt>大きさ</dt><dd>300 × 250 px</dd></div>
+            <div><dt>紺</dt><dd><span class="chip is-navy"></span>#0B3A8C</dd></div>
+            <div><dt>赤</dt><dd><span class="chip is-red"></span>#D81E2C</dd></div>
+            <div><dt>クリーム</dt><dd><span class="chip is-cream"></span>#FFF4D6</dd></div>
+            <div><dt>緑</dt><dd><span class="chip is-green"></span>#3DAE49</dd></div>
+          </dl>
+        </div>
+        <figcaption>見本は実際のバナーと同じ大きさです。</figcaption>
+      </figure>
+    </section>
+
+    <nav class="pager" aria-label="ページ送り">
+      <a class="pg pg-prev" href="./#lessons"><span class="pg-k">もどる</span><span class="pg-t">テーマ一覧</span></a>
+      <div class="pg pg-next is-soon"><span class="pg-k">次（準備中）</span><span class="pg-t">02 バナー制作① 文字で伝える</span></div>
+    </nav>
+  </main>
+</div>
+
+<footer class="site-foot">
+  <div class="inner">
+    <span>WEBデザインことはじめ</span>
+    <span>Copyright 2026 Okuyuki All Rights Reserved.</span>
+  </div>
+</footer>
+
+<script src="js/budoux-ja.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
