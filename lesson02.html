@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>バナー制作① 文字で伝える｜WEBデザインことはじめ</title>
+<meta name="description" content="文字の大きさ、書体、文字の間、そろえ、色。文字だけで伝わるバナーの作り方">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Maru+Gothic:wght@500;700&family=Zen+Old+Mincho:wght@700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="inner">
+    <a class="site-name" href="./">
+      <span class="mark"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 1.5v12l3.3-3 2.2 4.6 2-1-2.2-4.5H13z"/></svg></span>
+      <span>WEBデザインことはじめ</span>
+    </a>
+    <nav class="head-nav" aria-label="サイト">
+      <a href="./">トップ</a>
+      <a href="./#lessons" aria-current="page">テーマ一覧</a>
+      <a href="./#links">参考リンク</a>
+    </nav>
+  </div>
+</header>
+
+<div class="layout">
+
+  <!-- ===== 目次 ===== -->
+  <details class="toc" open>
+    <summary><span class="dot"></span>WEBデザインことはじめ<span class="toggle"></span></summary>
+    <div class="toc-body">
+      <a class="toc-top" href="./">トップページ</a>
+
+      <div class="toc-item"><a class="toc-head" href="lesson01.html"><span class="toc-no">01</span><span class="toc-title">この講座について／Webデザインの基礎</span></a></div>
+      <div class="toc-item is-current">
+        <a class="toc-head" href="lesson02.html" aria-current="page"><span class="toc-no">02</span><span class="toc-title">バナー制作① 文字で伝える</span></a>
+        <ul class="toc-parts">
+          <li><a href="#text"><span class="n">1</span><span>文字だけのバナー</span></a></li>
+          <li><a href="#size"><span class="n">2</span><span>大きさ</span></a></li>
+          <li><a href="#number"><span class="n">3</span><span>数字</span></a></li>
+          <li><a href="#font"><span class="n">4</span><span>書体</span></a></li>
+          <li><a href="#space"><span class="n">5</span><span>文字の間</span></a></li>
+          <li><a href="#align"><span class="n">6</span><span>そろえ</span></a></li>
+          <li><a href="#color"><span class="n">7</span><span>色</span></a></li>
+          <li><a href="#panel"><span class="n">8</span><span>文字パネル</span></a></li>
+          <li><a href="#make"><span class="n">9</span><span>文字だけで作る</span></a></li>
+        </ul>
+      </div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">03</span><span class="toc-title">バナー制作② 写真で伝える</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">04</span><span class="toc-title">バナー制作③ サイズ展開</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">05</span><span class="toc-title">LP制作① 構成を知る</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">06</span><span class="toc-title">LP制作② ワイヤーフレーム</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">07</span><span class="toc-title">LP制作③ デザイン</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">08</span><span class="toc-title">LP制作④ 仕上げ</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">09</span><span class="toc-title">Webサイト制作① 企画</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">10</span><span class="toc-title">Webサイト制作② 設計</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">11</span><span class="toc-title">Webサイト制作③ トップページ</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">12</span><span class="toc-title">Webサイト制作④ 下層ページ・スマートフォン版</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">13</span><span class="toc-title">Webサイト制作⑤ 仕上げ</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">14</span><span class="toc-title">コーディング体験① HTMLとCSSの仕組み</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">15</span><span class="toc-title">コーディング体験② デザインをコードで再現</span></span></div>
+    </div>
+  </details>
+
+  <!-- ===== 本文 ===== -->
+  <main class="main">
+    <nav class="crumbs" aria-label="パンくずリスト"><a href="./">トップ</a><span>02 バナー制作① 文字で伝える</span></nav>
+
+    <header class="page-head">
+      <span class="no">02</span>
+      <h1 class="page-title">バナー制作① 文字で伝える</h1>
+    </header>
+    <p class="dates">最終更新日：2026/10/07</p>
+
+    <!-- ===== 文字だけのバナー ===== -->
+    <section class="part" id="text">
+      <p class="part-label">文字</p>
+      <h2 class="msg">文字だけでもバナーは作れる</h2>
+
+      <figure class="fig is-center">
+        <div class="bn is-text" role="img" aria-label="文字だけのバナー。森のパン市、11月3日 火曜・祝日、くわしく見るボタン">
+              <span class="bn-title">森のパン市</span>
+              <span class="bn-date"><b>11.3</b>火・祝</span>
+              <span class="bn-btn">くわしく見る</span>
+            </div>
+      </figure>
+
+      <ul class="jump">
+        <li><a href="#size">大きさ</a></li>
+        <li><a href="#number">数字</a></li>
+        <li><a href="#font">書体</a></li>
+        <li><a href="#space">文字の間</a></li>
+        <li><a href="#align">そろえ</a></li>
+        <li><a href="#color">色</a></li>
+      </ul>
+    </section>
+
+    <!-- ===== 大きさ ===== -->
+    <section class="part" id="size">
+      <p class="part-label">大きさ</p>
+      <h2 class="msg">いちばん伝えたいことを大きくする</h2>
+
+      <figure class="fig">
+        <div class="pair">
+          <div class="pair-cell">
+            <div class="bn is-text is-flat" role="img" aria-label="名前も日にちもボタンも、ぜんぶ同じ大きさの文字で作ったバナー">
+              <span class="bn-title">森のパン市</span>
+              <span class="bn-date"><b>11.3</b>火・祝</span>
+              <span class="bn-btn">くわしく見る</span>
+            </div>
+            <span class="cap">ぜんぶ同じ大きさ</span>
+          </div>
+          <div class="pair-cell">
+            <div class="bn is-text" role="img" aria-label="名前をいちばん大きく、日にちを次に大きく、ボタンを小さくしたバナー">
+              <span class="bn-title">森のパン市</span>
+              <span class="bn-date"><b>11.3</b>火・祝</span>
+              <span class="bn-btn">くわしく見る</span>
+            </div>
+            <span class="cap is-after">大きさに差をつけた</span>
+          </div>
+        </div>
+      </figure>
+    </section>
+
+    <!-- ===== 数字 ===== -->
+    <section class="part" id="number">
+      <p class="part-label">数字</p>
+      <h2 class="msg">数字は大きく単位は小さく</h2>
+
+      <figure class="fig">
+        <div class="pair">
+          <div class="pair-cell">
+            <div class="board is-flat" role="img" aria-label="数字も単位も同じ大きさ。11.3 火・祝、50%OFF、3日間かぎり">
+              <span class="num"><b>11.3</b>火・祝</span>
+              <span class="num"><b>50</b>%OFF</span>
+              <span class="num"><b>3</b>日間かぎり</span>
+            </div>
+            <span class="cap">同じ大きさ</span>
+          </div>
+          <div class="pair-cell">
+            <div class="board" role="img" aria-label="数字だけを大きくしたもの。11.3 火・祝、50%OFF、3日間かぎり">
+              <span class="num"><b>11.3</b>火・祝</span>
+              <span class="num"><b>50</b>%OFF</span>
+              <span class="num"><b>3</b>日間かぎり</span>
+            </div>
+            <span class="cap is-after">数字を大きく</span>
+          </div>
+        </div>
+      </figure>
+    </section>
+
+    <!-- ===== 書体 ===== -->
+    <section class="part" id="font">
+      <p class="part-label">書体</p>
+      <h2 class="msg">書体で印象が変わる</h2>
+
+      <figure class="fig">
+        <div class="faces">
+          <div class="face is-gothic"><span class="face-word">森のパン市</span><b>ゴシック体</b><span>はっきり</span></div>
+          <div class="face is-mincho"><span class="face-word">森のパン市</span><b>明朝体</b><span>上品</span></div>
+          <div class="face is-maru"><span class="face-word">森のパン市</span><b>丸ゴシック体</b><span>やさしい</span></div>
+        </div>
+      </figure>
+      <p class="aside">書体は2つまでにするとまとまります。</p>
+    </section>
+
+    <!-- ===== 文字の間 ===== -->
+    <section class="part" id="space">
+      <p class="part-label">文字の間</p>
+      <h2 class="msg">文字の間をととのえる</h2>
+
+      <figure class="fig">
+        <div class="pair">
+          <div class="pair-cell">
+            <div class="board" role="img" aria-label="11.3 火・祝。打ったままの文字。記号のまわりが空いている">
+              <span class="big">11.3 火・祝</span>
+            </div>
+            <span class="cap">打ったまま</span>
+          </div>
+          <div class="pair-cell">
+            <div class="board" role="img" aria-label="11.3 火・祝。記号のまわりのすきまをつめた文字">
+              <span class="big is-tight">11.3 火<i>・</i>祝</span>
+            </div>
+            <span class="cap is-after">すきまをつめた</span>
+          </div>
+        </div>
+      </figure>
+      <p class="aside">記号や数字のまわりはすきまが空いて見えます。</p>
+    </section>
+
+    <!-- ===== そろえ ===== -->
+    <section class="part" id="align">
+      <p class="part-label">そろえ</p>
+      <h2 class="msg">はしをそろえる</h2>
+
+      <figure class="fig">
+        <div class="pair">
+          <div class="pair-cell">
+            <div class="bn is-text is-ragged" role="img" aria-label="名前は中央、日にちは右、ボタンは左。置く場所がばらばらのバナー">
+              <span class="bn-title">森のパン市</span>
+              <span class="bn-date"><b>11.3</b>火・祝</span>
+              <span class="bn-btn">くわしく見る</span>
+            </div>
+            <span class="cap">ばらばら</span>
+          </div>
+          <div class="pair-cell">
+            <div class="bn is-text is-guide" role="img" aria-label="名前も日にちもボタンも、左はしを同じ線にそろえたバナー">
+              <span class="bn-title">森のパン市</span>
+              <span class="bn-date"><b>11.3</b>火・祝</span>
+              <span class="bn-btn">くわしく見る</span>
+            </div>
+            <span class="cap is-after">左にそろえた</span>
+          </div>
+        </div>
+      </figure>
+    </section>
+
+    <!-- ===== 色 ===== -->
+    <section class="part" id="color">
+      <p class="part-label">色</p>
+      <h2 class="msg">読める色にする</h2>
+
+      <figure class="fig">
+        <div class="pair">
+          <div class="pair-cell">
+            <div class="bn is-text is-pale" role="img" aria-label="うすい青の背景に白い文字。文字が読みにくいバナー">
+              <span class="bn-title">森のパン市</span>
+              <span class="bn-date"><b>11.3</b>火・祝</span>
+              <span class="bn-btn">くわしく見る</span>
+            </div>
+            <span class="cap">明るさの差 2.0 : 1</span>
+          </div>
+          <div class="pair-cell">
+            <div class="bn is-text" role="img" aria-label="こい青の背景に白い文字。文字が読みやすいバナー">
+              <span class="bn-title">森のパン市</span>
+              <span class="bn-date"><b>11.3</b>火・祝</span>
+              <span class="bn-btn">くわしく見る</span>
+            </div>
+            <span class="cap is-after">明るさの差 5.9 : 1</span>
+          </div>
+        </div>
+      </figure>
+      <p class="aside">背景と文字の明るさの差は 4.5 : 1 以上が目安です。大きな文字は 3 : 1 以上。</p>
+    </section>
+
+    <!-- ===== 文字パネル ===== -->
+    <section class="part" id="panel">
+      <p class="part-label">Illustrator</p>
+      <h2 class="msg">文字パネルで調整する</h2>
+
+      <div class="ref-cols">
+        <div class="ref-col">
+          <p class="ref-k">文字パネル</p>
+          <dl class="spec">
+            <div><dt>出し方</dt><dd>ウィンドウ → 書式 → 文字</dd></div>
+            <div><dt>大きさ</dt><dd>フォントサイズ</dd></div>
+            <div><dt>行の間</dt><dd>行送り</dd></div>
+            <div><dt>2文字の間</dt><dd>カーニング</dd></div>
+            <div><dt>全体の間</dt><dd>トラッキング</dd></div>
+          </dl>
+        </div>
+        <div class="ref-col">
+          <p class="ref-k">段落パネル</p>
+          <dl class="spec">
+            <div><dt>出し方</dt><dd>ウィンドウ → 書式 → 段落</dd></div>
+            <div><dt>そろえ</dt><dd>左揃え・中央揃え・右揃え</dd></div>
+          </dl>
+        </div>
+      </div>
+
+      <details class="more">
+        <summary>出典を見る</summary>
+        <ul class="links">
+          <li><a href="https://helpx.adobe.com/jp/illustrator/using/line-character-spacing.html" target="_blank" rel="noopener">行間隔と文字間隔</a><span class="src">Adobe</span></li>
+          <li><a href="https://waic.jp/translations/WCAG22/#contrast-minimum" target="_blank" rel="noopener">WCAG 2.2 達成基準 1.4.3 コントラスト（最低限）</a><span class="src">ウェブアクセシビリティ基盤委員会</span></li>
+          <li><a href="https://color.adobe.com/ja/create/color-contrast-analyzer" target="_blank" rel="noopener">カラーコントラストチェッカー</a><span class="src">Adobe</span></li>
+        </ul>
+      </details>
+    </section>
+
+    <!-- ===== 文字だけで作る ===== -->
+    <section class="part" id="make">
+      <p class="part-label">やってみよう</p>
+      <h2 class="msg">文字だけでバナーを作ってみよう</h2>
+
+      <figure class="fig">
+        <dl class="spec">
+          <div><dt>大きさ</dt><dd>300 × 250 px</dd></div>
+          <div><dt>名前</dt><dd>KAMATA GARDEN TERRACE</dd></div>
+          <div><dt>日にち</dt><dd>2027.7.17 土</dd></div>
+          <div><dt>ボタン</dt><dd>詳しく見る</dd></div>
+          <div><dt>写真</dt><dd>使わない</dd></div>
+          <div><dt>色</dt><dd>3色まで</dd></div>
+          <div><dt>書体</dt><dd>2つまで</dd></div>
+        </dl>
+      </figure>
+    </section>
+
+    <nav class="pager" aria-label="ページ送り">
+      <a class="pg pg-prev" href="lesson01.html"><span class="pg-k">前</span><span class="pg-t">01 この講座について／Webデザインの基礎</span></a>
+      <div class="pg pg-next is-soon"><span class="pg-k">次（準備中）</span><span class="pg-t">03 バナー制作② 写真で伝える</span></div>
+    </nav>
+  </main>
+</div>
+
+<footer class="site-foot">
+  <div class="inner">
+    <span>WEBデザインことはじめ</span>
+    <span>Copyright 2026 Okuyuki All Rights Reserved.</span>
+  </div>
+</footer>
+
+<script src="js/budoux-ja.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
