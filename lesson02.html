@@ -40,14 +40,18 @@
         <a class="toc-head" href="lesson02.html" aria-current="page"><span class="toc-no">02</span><span class="toc-title">バナー制作① 文字で伝える</span></a>
         <ul class="toc-parts">
           <li><a href="#text"><span class="n">1</span><span>文字だけのバナー</span></a></li>
-          <li><a href="#size"><span class="n">2</span><span>大きさ</span></a></li>
-          <li><a href="#number"><span class="n">3</span><span>数字</span></a></li>
-          <li><a href="#font"><span class="n">4</span><span>書体</span></a></li>
-          <li><a href="#space"><span class="n">5</span><span>文字の間</span></a></li>
-          <li><a href="#align"><span class="n">6</span><span>そろえ</span></a></li>
-          <li><a href="#color"><span class="n">7</span><span>色</span></a></li>
-          <li><a href="#panel"><span class="n">8</span><span>文字パネル</span></a></li>
-          <li><a href="#make"><span class="n">9</span><span>文字だけで作る</span></a></li>
+          <li><a href="#words"><span class="n">2</span><span>言葉</span></a></li>
+          <li><a href="#size"><span class="n">3</span><span>大きさ</span></a></li>
+          <li><a href="#number"><span class="n">4</span><span>数字</span></a></li>
+          <li><a href="#font"><span class="n">5</span><span>書体</span></a></li>
+          <li><a href="#space"><span class="n">6</span><span>文字の間</span></a></li>
+          <li><a href="#line"><span class="n">7</span><span>行の間</span></a></li>
+          <li><a href="#align"><span class="n">8</span><span>そろえ</span></a></li>
+          <li><a href="#group"><span class="n">9</span><span>まとまり</span></a></li>
+          <li><a href="#margin"><span class="n">10</span><span>余白</span></a></li>
+          <li><a href="#color"><span class="n">11</span><span>色</span></a></li>
+          <li><a href="#accent"><span class="n">12</span><span>差し色</span></a></li>
+          <li><a href="#make"><span class="n">13</span><span>文字だけで作る</span></a></li>
         </ul>
       </div>
       <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">03</span><span class="toc-title">バナー制作② 写真で伝える</span></span></div>
@@ -90,13 +94,44 @@
       </figure>
 
       <ul class="jump">
+        <li><a href="#words">言葉</a></li>
         <li><a href="#size">大きさ</a></li>
         <li><a href="#number">数字</a></li>
         <li><a href="#font">書体</a></li>
         <li><a href="#space">文字の間</a></li>
+        <li><a href="#line">行の間</a></li>
         <li><a href="#align">そろえ</a></li>
+        <li><a href="#group">まとまり</a></li>
+        <li><a href="#margin">余白</a></li>
         <li><a href="#color">色</a></li>
+        <li><a href="#accent">差し色</a></li>
       </ul>
+    </section>
+
+    <!-- ===== 言葉 ===== -->
+    <section class="part" id="words">
+      <p class="part-label">言葉</p>
+      <h2 class="msg">言葉は短くする</h2>
+
+      <figure class="fig">
+        <div class="pair">
+          <div class="pair-cell">
+            <div class="bn is-text" role="img" aria-label="文で書いたバナー。森のパン市を11月3日の火曜日（祝日）に開催します。くわしくはこちらからどうぞ">
+              <span class="bn-long">森のパン市を11月3日の火曜日（祝日）に開催します</span>
+              <span class="bn-btn">くわしくはこちらからどうぞ</span>
+            </div>
+            <span class="cap">文で書いた</span>
+          </div>
+          <div class="pair-cell">
+            <div class="bn is-text" role="img" aria-label="短い言葉にしたバナー。森のパン市、11.3 火・祝、くわしく見る">
+              <span class="bn-title">森のパン市</span>
+              <span class="bn-date"><b>11.3</b>火・祝</span>
+              <span class="bn-btn">くわしく見る</span>
+            </div>
+            <span class="cap is-after">短い言葉にした</span>
+          </div>
+        </div>
+      </figure>
     </section>
 
     <!-- ===== 大きさ ===== -->
@@ -192,6 +227,29 @@
       <p class="aside">記号や数字のまわりはすきまが空いて見えます。</p>
     </section>
 
+    <!-- ===== 行の間 ===== -->
+    <section class="part" id="line">
+      <p class="part-label">行の間</p>
+      <h2 class="msg">行の間をつめる</h2>
+
+      <figure class="fig">
+        <div class="pair">
+          <div class="pair-cell">
+            <div class="board" role="img" aria-label="2行の文字「森の パン市」。行の間が広く、2行がはなれて見える">
+              <span class="lines">森の<br>パン市</span>
+            </div>
+            <span class="cap">打ったまま 175%</span>
+          </div>
+          <div class="pair-cell">
+            <div class="board" role="img" aria-label="2行の文字「森の パン市」。行の間をつめて、ひとまとまりに見える">
+              <span class="lines is-tight">森の<br>パン市</span>
+            </div>
+            <span class="cap is-after">つめた 120%</span>
+          </div>
+        </div>
+      </figure>
+    </section>
+
     <!-- ===== そろえ ===== -->
     <section class="part" id="align">
       <p class="part-label">そろえ</p>
@@ -214,6 +272,60 @@
               <span class="bn-btn">くわしく見る</span>
             </div>
             <span class="cap is-after">左にそろえた</span>
+          </div>
+        </div>
+      </figure>
+    </section>
+
+    <!-- ===== まとまり ===== -->
+    <section class="part" id="group">
+      <p class="part-label">まとまり</p>
+      <h2 class="msg">関係のあるものを近づける</h2>
+
+      <figure class="fig">
+        <div class="pair">
+          <div class="pair-cell">
+            <div class="bn is-text is-even" role="img" aria-label="名前、日にち、ボタンを同じ間かくで置いたバナー">
+              <span class="bn-title">森のパン市</span>
+              <span class="bn-date"><b>11.3</b>火・祝</span>
+              <span class="bn-btn">くわしく見る</span>
+            </div>
+            <span class="cap">ぜんぶ同じ間かく</span>
+          </div>
+          <div class="pair-cell">
+            <div class="bn is-text is-grouped" role="img" aria-label="名前と日にちを近づけて、ボタンを少し離したバナー">
+              <span class="bn-title">森のパン市</span>
+              <span class="bn-date"><b>11.3</b>火・祝</span>
+              <span class="bn-btn">くわしく見る</span>
+            </div>
+            <span class="cap is-after">名前と日にちを近づけた</span>
+          </div>
+        </div>
+      </figure>
+    </section>
+
+    <!-- ===== 余白 ===== -->
+    <section class="part" id="margin">
+      <p class="part-label">余白</p>
+      <h2 class="msg">はしから離す</h2>
+
+      <figure class="fig">
+        <div class="pair">
+          <div class="pair-cell">
+            <div class="bn is-text is-edge" role="img" aria-label="文字がバナーの左上のはしにくっついているバナー">
+              <span class="bn-title">森のパン市</span>
+              <span class="bn-date"><b>11.3</b>火・祝</span>
+              <span class="bn-btn">くわしく見る</span>
+            </div>
+            <span class="cap">はしにくっついている</span>
+          </div>
+          <div class="pair-cell">
+            <div class="bn is-text is-frame" role="img" aria-label="文字をバナーのはしから20ピクセル離したバナー">
+              <span class="bn-title">森のパン市</span>
+              <span class="bn-date"><b>11.3</b>火・祝</span>
+              <span class="bn-btn">くわしく見る</span>
+            </div>
+            <span class="cap is-after">20px 離した</span>
           </div>
         </div>
       </figure>
@@ -247,30 +359,31 @@
       <p class="aside">背景と文字の明るさの差は 4.5 : 1 以上が目安です。大きな文字は 3 : 1 以上。</p>
     </section>
 
-    <!-- ===== 文字パネル ===== -->
-    <section class="part" id="panel">
-      <p class="part-label">Illustrator</p>
-      <h2 class="msg">文字パネルで調整する</h2>
+    <!-- ===== 差し色 ===== -->
+    <section class="part" id="accent">
+      <p class="part-label">差し色</p>
+      <h2 class="msg">色を変えるのは1か所だけ</h2>
 
-      <div class="ref-cols">
-        <div class="ref-col">
-          <p class="ref-k">文字パネル</p>
-          <dl class="spec">
-            <div><dt>出し方</dt><dd>ウィンドウ → 書式 → 文字</dd></div>
-            <div><dt>大きさ</dt><dd>フォントサイズ</dd></div>
-            <div><dt>行の間</dt><dd>行送り</dd></div>
-            <div><dt>2文字の間</dt><dd>カーニング</dd></div>
-            <div><dt>全体の間</dt><dd>トラッキング</dd></div>
-          </dl>
+      <figure class="fig">
+        <div class="pair">
+          <div class="pair-cell">
+            <div class="bn is-text is-many" role="img" aria-label="名前は黄色、日にちはピンク、ボタンは緑。色が多いバナー">
+              <span class="bn-title">森のパン市</span>
+              <span class="bn-date"><b>11.3</b>火・祝</span>
+              <span class="bn-btn">くわしく見る</span>
+            </div>
+            <span class="cap">色が多い</span>
+          </div>
+          <div class="pair-cell">
+            <div class="bn is-text is-accent" role="img" aria-label="日にちの数字だけを黄色にしたバナー">
+              <span class="bn-title">森のパン市</span>
+              <span class="bn-date"><b>11.3</b>火・祝</span>
+              <span class="bn-btn">くわしく見る</span>
+            </div>
+            <span class="cap is-after">日にちだけ黄色</span>
+          </div>
         </div>
-        <div class="ref-col">
-          <p class="ref-k">段落パネル</p>
-          <dl class="spec">
-            <div><dt>出し方</dt><dd>ウィンドウ → 書式 → 段落</dd></div>
-            <div><dt>そろえ</dt><dd>左揃え・中央揃え・右揃え</dd></div>
-          </dl>
-        </div>
-      </div>
+      </figure>
 
       <details class="more">
         <summary>出典を見る</summary>

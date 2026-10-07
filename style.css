@@ -726,6 +726,18 @@ a.toc-head:hover { background: var(--paper); color: var(--ink); }
 .bn.is-ragged .bn-title { justify-self: center; }
 .bn.is-ragged .bn-date { justify-self: end; }
 .bn.is-pale { background: #9db7f5; }
+.bn.is-even { gap: 30px; }
+.bn.is-even .bn-btn { margin-top: 0; }
+.bn.is-grouped .bn-btn { margin-top: 22px; }
+.bn.is-edge { align-content: start; padding: 2px; }
+.bn.is-many .bn-title { color: var(--sun); }
+.bn.is-many .bn-date { color: #ffb3d1; }
+.bn.is-many .bn-btn { background: #8ee6a8; }
+.bn.is-accent .bn-date b { color: var(--sun); }
+/* 文で書いたとき */
+.bn-long { font-size: 20px; line-height: 1.5; }
+/* はしからの余白を見せる */
+.bn.is-frame::before { content: ""; position: absolute; inset: 19px; border: 2px dashed var(--sun); }
 /* そろえた線を見せる */
 .bn.is-guide::before { content: ""; position: absolute; top: 0; bottom: 0; left: 19px; border-left: 2px dashed var(--sun); }
 
@@ -756,6 +768,10 @@ a.toc-head:hover { background: var(--paper); color: var(--ink); }
 .num b { margin-right: 4px; font-size: 44px; }
 .board.is-flat .num,
 .board.is-flat .num b { margin-right: 0; font-size: 24px; }
+
+/* 2行の文字。行の間は、文字の大きさに対する割合で決める */
+.lines { font-size: 44px; line-height: 1.75; }
+.lines.is-tight { line-height: 1.2; }
 
 .big { font-size: 40px; white-space: nowrap; }
 .big.is-tight { letter-spacing: -0.02em; }
