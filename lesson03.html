@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>バナー制作② 写真で伝える｜WEBデザインことはじめ</title>
+<meta name="description" content="写真の切りとり方、文字の置き場所、写真から色を拾う。写真で伝わるバナーの作り方">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Maru+Gothic:wght@500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="inner">
+    <a class="site-name" href="./">
+      <span class="mark"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 1.5v12l3.3-3 2.2 4.6 2-1-2.2-4.5H13z"/></svg></span>
+      <span>WEBデザインことはじめ</span>
+    </a>
+    <nav class="head-nav" aria-label="サイト">
+      <a href="./">トップ</a>
+      <a href="./#lessons" aria-current="page">テーマ一覧</a>
+      <a href="./#links">参考リンク</a>
+    </nav>
+  </div>
+</header>
+
+<div class="layout">
+
+  <!-- ===== 目次 ===== -->
+  <details class="toc" open>
+    <summary><span class="dot"></span>WEBデザインことはじめ<span class="toggle"></span></summary>
+    <div class="toc-body">
+      <a class="toc-top" href="./">トップページ</a>
+
+      <div class="toc-item"><a class="toc-head" href="lesson01.html"><span class="toc-no">01</span><span class="toc-title">この講座について／Webデザインの基礎</span></a></div>
+      <div class="toc-item"><a class="toc-head" href="lesson02.html"><span class="toc-no">02</span><span class="toc-title">バナー制作① 文字で伝える</span></a></div>
+      <div class="toc-item is-current">
+        <a class="toc-head" href="lesson03.html" aria-current="page"><span class="toc-no">03</span><span class="toc-title">バナー制作② 写真で伝える</span></a>
+        <ul class="toc-parts">
+          <li><a href="#photo"><span class="n">1</span><span>写真の力</span></a></li>
+          <li><a href="#crop"><span class="n">2</span><span>切りとり方</span></a></li>
+          <li><a href="#one"><span class="n">3</span><span>写真の数</span></a></li>
+          <li><a href="#place"><span class="n">4</span><span>文字の置き場所</span></a></li>
+          <li><a href="#read"><span class="n">5</span><span>読みやすさ</span></a></li>
+          <li><a href="#pick"><span class="n">6</span><span>色を拾う</span></a></li>
+          <li><a href="#res"><span class="n">7</span><span>写真の大きさ</span></a></li>
+          <li><a href="#owner"><span class="n">8</span><span>写真の持ち主</span></a></li>
+          <li><a href="#make"><span class="n">9</span><span>写真で作る</span></a></li>
+        </ul>
+      </div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">04</span><span class="toc-title">バナー制作③ サイズ展開</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">05</span><span class="toc-title">LP制作① 構成を知る</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">06</span><span class="toc-title">LP制作② ワイヤーフレーム</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">07</span><span class="toc-title">LP制作③ デザイン</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">08</span><span class="toc-title">LP制作④ 仕上げ</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">09</span><span class="toc-title">Webサイト制作① 企画</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">10</span><span class="toc-title">Webサイト制作② 設計</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">11</span><span class="toc-title">Webサイト制作③ トップページ</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">12</span><span class="toc-title">Webサイト制作④ 下層ページ・スマートフォン版</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">13</span><span class="toc-title">Webサイト制作⑤ 仕上げ</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">14</span><span class="toc-title">コーディング体験① HTMLとCSSの仕組み</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">15</span><span class="toc-title">コーディング体験② デザインをコードで再現</span></span></div>
+    </div>
+  </details>
+
+  <!-- ===== 本文 ===== -->
+  <main class="main">
+    <nav class="crumbs" aria-label="パンくずリスト"><a href="./">トップ</a><span>03 バナー制作② 写真で伝える</span></nav>
+
+    <header class="page-head">
+      <span class="no">03</span>
+      <h1 class="page-title">バナー制作② 写真で伝える</h1>
+    </header>
+    <p class="dates">最終更新日：2026/10/12</p>
+
+    <!-- ===== 写真 ===== -->
+    <section class="part" id="photo">
+      <p class="part-label">写真</p>
+      <h2 class="msg">写真は一目で伝わる</h2>
+
+      <figure class="fig">
+        <div class="pair">
+          <div class="pair-cell">
+            <div class="pb" role="img" aria-label="文字だけのバナー。クリームソーダ、7月1日から、メニューを見るボタン">
+              <span class="pb-text"><span class="pb-title">クリーム<br>ソーダ</span><span class="pb-date"><b>7.1</b>から</span></span>
+              <span class="pb-btn">メニューを見る</span>
+            </div>
+            <span class="cap">文字だけ</span>
+          </div>
+          <div class="pair-cell">
+            <div class="pb" role="img" aria-label="クリームソーダの写真を入れたバナー。クリームソーダ、7月1日から、メニューを見るボタン">
+              <img src="images/03-right.webp" width="300" height="250" alt="" decoding="async">
+              <span class="pb-text"><span class="pb-title">クリーム<br>ソーダ</span><span class="pb-date"><b>7.1</b>から</span></span>
+              <span class="pb-btn">メニューを見る</span>
+            </div>
+            <span class="cap is-after">写真を入れた</span>
+          </div>
+        </div>
+      </figure>
+
+      <ul class="jump">
+        <li><a href="#crop">切りとり方</a></li>
+        <li><a href="#one">写真の数</a></li>
+        <li><a href="#place">文字の置き場所</a></li>
+        <li><a href="#read">読みやすさ</a></li>
+        <li><a href="#pick">色を拾う</a></li>
+        <li><a href="#res">写真の大きさ</a></li>
+        <li><a href="#owner">写真の持ち主</a></li>
+      </ul>
+    </section>
+
+    <!-- ===== 切りとり方 ===== -->
+    <section class="part" id="crop">
+      <p class="part-label">切りとり方</p>
+      <h2 class="msg">見せたいところで切りとる</h2>
+
+      <figure class="fig">
+        <div class="pair">
+          <div class="pair-cell">
+            <div class="pb is-bare is-contain" role="img" aria-label="写真の全体をそのまま入れた。グラスが小さく上下があいている">
+              <img src="images/03-photo.webp" width="600" height="327" alt="" decoding="async">
+              
+            </div>
+            <span class="cap">全体を入れた</span>
+          </div>
+          <div class="pair-cell">
+            <div class="pb is-bare" role="img" aria-label="アイスとさくらんぼに寄せて切りとった。おいしそうなところが大きく見える">
+              <img src="images/03-close.webp" width="300" height="250" alt="" decoding="async">
+              
+            </div>
+            <span class="cap is-after">おいしそうなところに寄せた</span>
+          </div>
+        </div>
+      </figure>
+    </section>
+
+    <!-- ===== 写真の数 ===== -->
+    <section class="part" id="one">
+      <p class="part-label">写真の数</p>
+      <h2 class="msg">写真は1枚にしぼる</h2>
+
+      <figure class="fig">
+        <div class="pair">
+          <div class="pair-cell">
+            <div class="pb is-collage" role="img" aria-label="写真を3枚並べたバナー。さくらんぼ、ソーダ、スプーンの写真。どれが主役かわかりにくい">
+              <span class="pb-row"><img src="images/03-p1.webp" width="100" height="140" alt="" decoding="async"><img src="images/03-p2.webp" width="100" height="140" alt="" decoding="async"><img src="images/03-p3.webp" width="100" height="140" alt="" decoding="async"></span>
+              <span class="pb-text"><span class="pb-title">クリームソーダ</span><span class="pb-date"><b>7.1</b>から</span></span>
+              <span class="pb-btn">メニューを見る</span>
+            </div>
+            <span class="cap">3枚並べた</span>
+          </div>
+          <div class="pair-cell">
+            <div class="pb" role="img" aria-label="写真を1枚だけ大きく使ったバナー。グラスが主役とわかる">
+              <img src="images/03-right.webp" width="300" height="250" alt="" decoding="async">
+              <span class="pb-text"><span class="pb-title">クリーム<br>ソーダ</span><span class="pb-date"><b>7.1</b>から</span></span>
+              <span class="pb-btn">メニューを見る</span>
+            </div>
+            <span class="cap is-after">1枚を大きく</span>
+          </div>
+        </div>
+      </figure>
+    </section>
+
+    <!-- ===== 文字の置き場所 ===== -->
+    <section class="part" id="place">
+      <p class="part-label">文字の置き場所</p>
+      <h2 class="msg">文字は写真の空いているところに置く</h2>
+
+      <figure class="fig">
+        <div class="pair">
+          <div class="pair-cell">
+            <div class="pb is-over" role="img" aria-label="文字をグラスの上に重ねたバナー。文字もグラスも見えにくい">
+              <img src="images/03-center.webp" width="300" height="250" alt="" decoding="async">
+              <span class="pb-text"><span class="pb-title">クリーム<br>ソーダ</span><span class="pb-date"><b>7.1</b>から</span></span>
+              <span class="pb-btn">メニューを見る</span>
+            </div>
+            <span class="cap">グラスに重ねた</span>
+          </div>
+          <div class="pair-cell">
+            <div class="pb" role="img" aria-label="文字を空の部分に置いたバナー。文字もグラスもよく見える">
+              <img src="images/03-right.webp" width="300" height="250" alt="" decoding="async">
+              <span class="pb-text"><span class="pb-title">クリーム<br>ソーダ</span><span class="pb-date"><b>7.1</b>から</span></span>
+              <span class="pb-btn">メニューを見る</span>
+            </div>
+            <span class="cap is-after">空に置いた</span>
+          </div>
+        </div>
+      </figure>
+    </section>
+
+    <!-- ===== 読みやすさ ===== -->
+    <section class="part" id="read">
+      <p class="part-label">読みやすさ</p>
+      <h2 class="msg">文字の下に色を敷いて読みやすくする</h2>
+
+      <figure class="fig">
+        <div class="pair">
+          <div class="pair-cell">
+            <div class="pb is-low" role="img" aria-label="文字をテーブルや人のいるところに直接のせたバナー。文字が読みにくい">
+              <img src="images/03-right.webp" width="300" height="250" alt="" decoding="async">
+              <span class="pb-text"><span class="pb-title">クリーム<br>ソーダ</span><span class="pb-date"><b>7.1</b>から</span></span>
+              <span class="pb-btn">メニューを見る</span>
+            </div>
+            <span class="cap">そのまま</span>
+          </div>
+          <div class="pair-cell">
+            <div class="pb is-low is-band" role="img" aria-label="文字の下にクリーム色を敷いたバナー。文字が読みやすい">
+              <img src="images/03-right.webp" width="300" height="250" alt="" decoding="async">
+              <span class="pb-text"><span class="pb-title">クリーム<br>ソーダ</span><span class="pb-date"><b>7.1</b>から</span></span>
+              <span class="pb-btn">メニューを見る</span>
+            </div>
+            <span class="cap is-after">下に色を敷いた</span>
+          </div>
+        </div>
+        <figcaption>写真を暗くしたりぼかしたりする方法もある。</figcaption>
+      </figure>
+    </section>
+
+    <!-- ===== 色 ===== -->
+    <section class="part" id="pick">
+      <p class="part-label">色</p>
+      <h2 class="msg">色は写真から拾う</h2>
+
+      <figure class="fig">
+        <img class="photo" src="images/03-photo.webp" width="600" height="327" alt="青空の下のテラスでクリームソーダを撮った写真" decoding="async">
+        <ul class="swatches">
+          <li><span class="sw" style="--c:#07A0EB"></span><b>空</b><span>#07A0EB</span></li>
+          <li><span class="sw" style="--c:#2BB519"></span><b>ソーダ</b><span>#2BB519</span></li>
+          <li><span class="sw" style="--c:#E30104"></span><b>さくらんぼ</b><span>#E30104</span></li>
+          <li><span class="sw" style="--c:#FEF9EB"></span><b>アイス</b><span>#FEF9EB</span></li>
+        </ul>
+      </figure>
+
+      <figure class="fig">
+        <div class="pair">
+          <div class="pair-cell">
+            <div class="pb is-purple" role="img" aria-label="ボタンを写真にない紫にしたバナー">
+              <img src="images/03-right.webp" width="300" height="250" alt="" decoding="async">
+              <span class="pb-text"><span class="pb-title">クリーム<br>ソーダ</span><span class="pb-date"><b>7.1</b>から</span></span>
+              <span class="pb-btn">メニューを見る</span>
+            </div>
+            <span class="cap">写真にない色</span>
+          </div>
+          <div class="pair-cell">
+            <div class="pb is-cherry" role="img" aria-label="ボタンをさくらんぼの赤にしたバナー">
+              <img src="images/03-right.webp" width="300" height="250" alt="" decoding="async">
+              <span class="pb-text"><span class="pb-title">クリーム<br>ソーダ</span><span class="pb-date"><b>7.1</b>から</span></span>
+              <span class="pb-btn">メニューを見る</span>
+            </div>
+            <span class="cap is-after">さくらんぼの赤</span>
+          </div>
+        </div>
+      </figure>
+    </section>
+
+    <!-- ===== 写真の大きさ ===== -->
+    <section class="part" id="res">
+      <p class="part-label">写真の大きさ</p>
+      <h2 class="msg">写真は大きめのものを使う</h2>
+
+      <figure class="fig">
+        <div class="pair">
+          <div class="pair-cell">
+            <div class="pb" role="img" aria-label="小さい写真を引きのばしたバナー。写真がぼやけている">
+              <img src="images/03-small.webp" width="300" height="250" alt="" decoding="async">
+              <span class="pb-text"><span class="pb-title">クリーム<br>ソーダ</span><span class="pb-date"><b>7.1</b>から</span></span>
+              <span class="pb-btn">メニューを見る</span>
+            </div>
+            <span class="cap">小さい写真をのばした</span>
+          </div>
+          <div class="pair-cell">
+            <div class="pb" role="img" aria-label="十分な大きさの写真を使ったバナー。写真がくっきりしている">
+              <img src="images/03-right.webp" width="300" height="250" alt="" decoding="async">
+              <span class="pb-text"><span class="pb-title">クリーム<br>ソーダ</span><span class="pb-date"><b>7.1</b>から</span></span>
+              <span class="pb-btn">メニューを見る</span>
+            </div>
+            <span class="cap is-after">十分な大きさ</span>
+          </div>
+        </div>
+        <figcaption>バナーに使う部分が <span class="nb">600 × 500 px</span> 以上あると2倍で書き出してもくっきり見える。</figcaption>
+      </figure>
+    </section>
+
+    <!-- ===== 写真の持ち主 ===== -->
+    <section class="part" id="owner">
+      <p class="part-label">写真の持ち主</p>
+      <h2 class="msg">写真には持ち主がいる</h2>
+      <p class="say">使っていい写真を使う。素材サイトも使い方のルールはサイトごとにちがう。</p>
+
+      <ul class="links">
+        <li><a href="https://www.pakutaso.com/" target="_blank" rel="noopener">ぱくたそ</a><span class="src">利用規約あり</span></li>
+        <li><a href="https://www.photo-ac.com/" target="_blank" rel="noopener">写真AC</a><span class="src">会員登録が必要</span></li>
+        <li><a href="https://unsplash.com/ja" target="_blank" rel="noopener">Unsplash</a><span class="src">英語のライセンス</span></li>
+      </ul>
+    </section>
+
+    <!-- ===== 写真で作る ===== -->
+    <section class="part" id="make">
+      <p class="part-label">やってみよう</p>
+      <h2 class="msg">写真を使ってバナーを作ってみよう</h2>
+
+      <figure class="fig">
+        <p class="ref-k">材料（クライアントの要望）</p>
+        <p class="memo-link"><a href="lesson02.html#make">02と同じ「奥村書店 秋のノートまつり」</a></p>
+
+        <p class="ref-k">決まり</p>
+        <dl class="spec">
+          <div><dt>大きさ</dt><dd>300 × 250 px</dd></div>
+          <div><dt>情報</dt><dd>材料から選ぶ（全部は入れない）</dd></div>
+          <div><dt>写真</dt><dd>1枚</dd></div>
+          <div><dt>ファイル形式</dt><dd>JPG</dd></div>
+        </dl>
+      </figure>
+    </section>
+
+    <nav class="pager" aria-label="ページ送り">
+      <a class="pg pg-prev" href="lesson02.html"><span class="pg-k">前</span><span class="pg-t">02 バナー制作① 文字で伝える</span></a>
+      <div class="pg pg-next is-soon"><span class="pg-k">次（準備中）</span><span class="pg-t">04 バナー制作③ サイズ展開</span></div>
+    </nav>
+  </main>
+</div>
+
+<footer class="site-foot">
+  <div class="inner">
+    <span>WEBデザインことはじめ</span>
+    <span>Copyright 2026 Okuyuki All Rights Reserved.</span>
+  </div>
+</footer>
+
+<script src="js/budoux-ja.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
