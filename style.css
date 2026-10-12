@@ -706,9 +706,9 @@ a.toc-head:hover { background: var(--paper); color: var(--ink); }
 .chip { display: inline-block; width: 14px; height: 14px; margin-right: 8px; border: 1px solid var(--rule); border-radius: 4px; vertical-align: -2px; }
 /* 見本のバナーで使っている色 */
 .chip.is-navy { background: #0b3a8c; }
-.chip.is-red { background: #d81e2c; }
+.chip.is-red { background: #c21119; }
 .chip.is-cream { background: #fff4d6; }
-.chip.is-green { background: #3dae49; }
+.chip.is-green { background: #53a251; }
 
 /* 見本と、その指定を並べる */
 .remake { display: grid; grid-template-columns: 300px minmax(0, 1fr); align-items: center; gap: 28px; }
