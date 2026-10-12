@@ -787,6 +787,14 @@ a.toc-head:hover { background: var(--paper); color: var(--ink); }
 .face b { font-family: var(--round); }
 .face span:last-child { color: var(--mute); font-size: var(--fs-sm); }
 
+/* ---------- 材料（たのまれた文章をそのまま並べる） ---------- */
+.memo { padding: 4px 20px; border-radius: var(--r-m); background: var(--paper); }
+.memo li { padding: 12px 0; line-height: 1.7; }
+.memo li + li { border-top: 1px solid var(--rule); }
+.fig .ref-k + .spec,
+.fig .ref-k + .memo { margin-top: -8px; }
+.fig .memo + .ref-k { margin-top: 12px; }
+
 /* ---------- ページの中の行き先 ---------- */
 .jump { display: flex; flex-wrap: wrap; gap: 8px; }
 .jump a { display: block; padding: 6px 16px; border-radius: 999px; background: var(--mist); font-family: var(--round); font-size: var(--fs-sm); font-weight: 700; text-decoration: none; }
