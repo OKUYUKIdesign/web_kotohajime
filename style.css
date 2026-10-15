@@ -833,6 +833,19 @@ a.toc-head:hover { background: var(--paper); color: var(--ink); }
 /* 文字の下に敷く色。文字のまわりだけに敷き、写真の主役はかくさない（10px・156px・160px・14px） */
 .pb.is-band::before { content: ""; position: absolute; left: 3.333cqw; bottom: 3.333cqw; z-index: 1; width: 52cqw; height: 53.333cqw; border-radius: 4.667cqw; background: rgba(255, 244, 214, 0.94); }
 
+/* 横長のバナー（320 × 100）。中の大きさは幅320pxのときの値を割合で書く */
+.pb.is-wide { width: 320px; aspect-ratio: 32 / 10; }
+.pb.is-wide .pb-text { top: 3.75cqw; left: 4.375cqw; gap: 0.625cqw; }   /* 12px・14px・2px */
+.pb.is-wide .pb-title { font-size: 5.625cqw; }                          /* 18px */
+.pb.is-wide .pb-title br { display: none; }                              /* 1行にする */
+.pb.is-wide .pb-date { font-size: 3.4375cqw; }                          /* 11px */
+.pb.is-wide .pb-date b { font-size: 5cqw; }                              /* 16px */
+.pb.is-wide .pb-btn { left: 4.375cqw; bottom: 3.75cqw; padding: 1.25cqw 3.75cqw; font-size: 3.4375cqw; }
+
+/* 2つの形を並べる。下の端をそろえる */
+.shapes { display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-end; gap: 24px 40px; }
+.shapes .pair-cell { flex: 0 1 auto; }
+
 /* 写真を3枚並べる（高さ140px・文字の位置150px） */
 .pb.is-collage .pb-row { position: absolute; top: 0; left: 0; right: 0; display: flex; }
 .pb.is-collage .pb-row img { flex: 1; min-width: 0; height: 46.667cqw; object-fit: cover; }
