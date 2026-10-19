@@ -786,7 +786,8 @@ a.toc-head:hover { background: var(--paper); color: var(--ink); }
 .memo li + li { border-top: 1px solid var(--rule); }
 .fig .ref-k + .spec,
 .fig .ref-k + .memo { margin-top: -8px; }
-.fig .memo + .ref-k { margin-top: 12px; }
+.fig .memo + .ref-k,
+.fig .spec + .ref-k { margin-top: 12px; }
 
 /* ---------- 写真のバナー ---------- */
 /* 写真を下に敷き、その上に文字を重ねる。文字の色は写真の空に合わせて紺にする
@@ -862,8 +863,6 @@ a.toc-head:hover { background: var(--paper); color: var(--ink); }
 .swatches b { font-family: var(--round); font-size: var(--fs-sm); }
 .swatches span:last-child { color: var(--mute); font-family: var(--mono); font-size: var(--fs-label); }
 
-/* 別のページへのリンクだけを置く行 */
-.memo-link { margin-top: -8px; padding: 14px 20px; border-radius: var(--r-m); background: var(--paper); }
 
 /* ---------- ページの中の行き先 ---------- */
 .jump { display: flex; flex-wrap: wrap; gap: 8px; }
