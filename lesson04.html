@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>バナー制作③ チラシから作る｜WEBデザインことはじめ</title>
+<meta name="description" content="チラシの情報から目的に合うものを選んで、バナーを作る">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Maru+Gothic:wght@500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="inner">
+    <a class="site-name" href="./">
+      <span class="mark"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 1.5v12l3.3-3 2.2 4.6 2-1-2.2-4.5H13z"/></svg></span>
+      <span>WEBデザインことはじめ</span>
+    </a>
+    <nav class="head-nav" aria-label="サイト">
+      <a href="./">トップ</a>
+      <a href="./#lessons" aria-current="page">テーマ一覧</a>
+      <a href="./#links">参考リンク</a>
+    </nav>
+  </div>
+</header>
+
+<div class="layout">
+
+  <!-- ===== 目次 ===== -->
+  <details class="toc" open>
+    <summary><span class="dot"></span>WEBデザインことはじめ<span class="toggle"></span></summary>
+    <div class="toc-body">
+      <a class="toc-top" href="./">トップページ</a>
+
+      <div class="toc-item"><a class="toc-head" href="lesson01.html"><span class="toc-no">01</span><span class="toc-title">この講座について／Webデザインの基礎</span></a></div>
+      <div class="toc-item"><a class="toc-head" href="lesson02.html"><span class="toc-no">02</span><span class="toc-title">バナー制作① 文字で伝える</span></a></div>
+      <div class="toc-item"><a class="toc-head" href="lesson03.html"><span class="toc-no">03</span><span class="toc-title">バナー制作② 写真で伝える</span></a></div>
+      <div class="toc-item is-current">
+        <a class="toc-head" href="lesson04.html" aria-current="page"><span class="toc-no">04</span><span class="toc-title">バナー制作③ チラシから作る</span></a>
+        <ul class="toc-parts">
+          <li><a href="#make"><span class="n">1</span><span>チラシから作る</span></a></li>
+        </ul>
+      </div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">05</span><span class="toc-title">LP制作① 構成を知る</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">06</span><span class="toc-title">LP制作② ワイヤーフレーム</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">07</span><span class="toc-title">LP制作③ デザイン</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">08</span><span class="toc-title">LP制作④ 仕上げ</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">09</span><span class="toc-title">Webサイト制作① 企画</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">10</span><span class="toc-title">Webサイト制作② 設計</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">11</span><span class="toc-title">Webサイト制作③ トップページ</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">12</span><span class="toc-title">Webサイト制作④ 下層ページ・スマートフォン版</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">13</span><span class="toc-title">Webサイト制作⑤ 仕上げ</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">14</span><span class="toc-title">コーディング体験① HTMLとCSSの仕組み</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">15</span><span class="toc-title">コーディング体験② デザインをコードで再現</span></span></div>
+    </div>
+  </details>
+
+  <!-- ===== 本文 ===== -->
+  <main class="main">
+    <nav class="crumbs" aria-label="パンくずリスト"><a href="./">トップ</a><span>04 バナー制作③ チラシから作る</span></nav>
+
+    <header class="page-head">
+      <span class="no">04</span>
+      <h1 class="page-title">バナー制作③ チラシから作る</h1>
+    </header>
+    <p class="dates">最終更新日：2026/10/26</p>
+
+    <!-- ===== チラシから作る ===== -->
+    <section class="part" id="make">
+      <p class="part-label">やってみよう</p>
+      <h2 class="msg">チラシからバナーを作ってみよう</h2>
+
+      <figure class="fig">
+        <img class="flyer" src="images/04-flyer.webp" width="840" height="1188" alt="見本のチラシ。OKストレッチ。マシンに任せるストレッチ、女性に大人気の30分ストレッチ、専用マシン10台完備、初回限定ストレッチ体験1,980円などの情報と写真が入っている" decoding="async">
+        <figcaption>このチラシの情報からバナーを作ります。</figcaption>
+      </figure>
+
+      <figure class="fig">
+        <p class="ref-k">目的（1つ選ぶ）</p>
+        <ul class="memo">
+          <li>初回体験を予約してもらう</li>
+          <li>お店を知ってもらう</li>
+          <li>LINEで友だちになってもらう</li>
+        </ul>
+
+        <p class="ref-k">決まり</p>
+        <dl class="spec">
+          <div><dt>大きさ</dt><dd>300 × 250 px</dd></div>
+          <div><dt>情報</dt><dd>チラシから選ぶ（全部は入れない）</dd></div>
+          <div><dt>ファイル形式</dt><dd>JPG</dd></div>
+        </dl>
+      </figure>
+    </section>
+
+    <nav class="pager" aria-label="ページ送り">
+      <a class="pg pg-prev" href="lesson03.html"><span class="pg-k">前</span><span class="pg-t">03 バナー制作② 写真で伝える</span></a>
+      <div class="pg pg-next is-soon"><span class="pg-k">次（準備中）</span><span class="pg-t">05 LP制作① 構成を知る</span></div>
+    </nav>
+  </main>
+</div>
+
+<footer class="site-foot">
+  <div class="inner">
+    <span>WEBデザインことはじめ</span>
+    <span>Copyright 2026 Okuyuki All Rights Reserved.</span>
+  </div>
+</footer>
+
+<script src="js/budoux-ja.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

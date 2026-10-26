@@ -924,3 +924,6 @@ a.pg:hover { color: var(--ink); transform: translateY(-2px); box-shadow: 0 10px 
   .fig { padding: 18px 14px; }
   .rule { padding: 18px; }
 }
+
+/* ---------- 見本のチラシ（04） ---------- */
+.flyer { display: block; width: 420px; max-width: 100%; height: auto; margin-inline: auto; border-radius: 6px; box-shadow: 0 2px 12px rgba(43, 48, 59, .14); }
