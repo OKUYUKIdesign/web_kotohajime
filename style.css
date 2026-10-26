@@ -927,3 +927,11 @@ a.pg:hover { color: var(--ink); transform: translateY(-2px); box-shadow: 0 10px 
 
 /* ---------- 見本のチラシ（04） ---------- */
 .flyer { display: block; width: 420px; max-width: 100%; height: auto; margin-inline: auto; border-radius: 6px; box-shadow: 0 2px 12px rgba(43, 48, 59, .14); }
+/* A4のチラシに同じ縮尺のバナーを重ねる。A4 = 794 × 1123 px（1in = 96px）、300 / 794 = 37.8% */
+.scale { position: relative; width: 420px; max-width: 100%; margin-inline: auto; }
+.scale .flyer { width: 100%; }
+.scale-bn { position: absolute; left: 0; top: 0; width: 37.8%; aspect-ratio: 300 / 250; display: grid; place-items: end start; border: 3px solid var(--accent); border-radius: 6px 0 0 0; background: rgba(37, 87, 230, .14); }
+.scale-bn span { padding: 2px 8px; background: var(--accent); color: #fff; font-family: var(--round); font-size: var(--fs-label); font-weight: 700; border-top-right-radius: 6px; }
+/* 左の項目が長いとき */
+.spec.is-wide div { grid-template-columns: 14rem minmax(0, 1fr); }
+@media (max-width: 560px) { .spec.is-wide div { grid-template-columns: minmax(0, 1fr); gap: 2px; } }
