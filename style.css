@@ -966,8 +966,8 @@ a.pg:hover { color: var(--ink); transform: translateY(-2px); box-shadow: 0 10px 
 .mock-one { font-size: .7rem; padding: 5px 16px; }
 
 /* 構成の順番 */
-.stack { list-style: none; width: min(100%, 26rem); margin-inline: auto; display: grid; gap: 6px; counter-reset: st; }
-.stack li { counter-increment: st; display: grid; grid-template-columns: 2rem 7.5rem minmax(0, 1fr); align-items: center; gap: 8px; padding: 10px 14px; border-radius: 8px; background: var(--paper); font-size: var(--fs-sm); }
+.stack { list-style: none; width: min(100%, 30rem); margin-inline: auto; display: grid; gap: 6px; counter-reset: st; }
+.stack li { counter-increment: st; display: grid; grid-template-columns: 2rem 8.5rem minmax(0, 1fr); align-items: center; gap: 8px; padding: 10px 14px; border-radius: 8px; background: var(--paper); font-size: var(--fs-sm); }
 .stack li::before { content: counter(st); font-family: var(--round); font-weight: 700; color: var(--faint); }
 .stack-k { font-family: var(--round); font-weight: 700; }
 .stack-v { color: var(--mute); }
