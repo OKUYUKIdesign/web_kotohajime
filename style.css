@@ -935,3 +935,62 @@ a.pg:hover { color: var(--ink); transform: translateY(-2px); box-shadow: 0 10px 
 /* 左の項目が長いとき */
 .spec.is-wide div { grid-template-columns: 14rem minmax(0, 1fr); }
 @media (max-width: 560px) { .spec.is-wide div { grid-template-columns: minmax(0, 1fr); gap: 2px; } }
+
+/* ---------- LP（05） ---------- */
+/* バナー → LP → 申し込み完了 */
+.route { display: flex; justify-content: center; align-items: center; gap: 12px; flex-wrap: wrap; }
+.route-step { display: grid; justify-items: center; gap: 10px; }
+.route-arrow { width: 24px; height: 24px; border-top: 3px solid var(--faint); border-right: 3px solid var(--faint); transform: rotate(45deg) scale(.6); }
+.route-bn { width: 150px; height: 125px; display: grid; align-content: center; justify-items: center; gap: 4px; border-radius: 6px; background: var(--sun); color: var(--ink); font-family: var(--round); font-weight: 700; text-align: center; box-shadow: 0 2px 8px rgba(43,48,59,.10); }
+.route-bn-k { font-size: .7rem; }
+.route-bn-t { font-size: 1.05rem; line-height: 1.25; }
+.route-btn, .mock-one, .sp-btn { padding: 3px 10px; border-radius: 999px; background: var(--accent); color: #fff; font-family: var(--round); font-size: .62rem; font-weight: 700; white-space: nowrap; }
+.route-lp { width: 76px; height: 190px; display: grid; grid-auto-rows: min-content; gap: 6px; padding: 8px; border-radius: 8px; background: var(--paper); box-shadow: 0 2px 8px rgba(43,48,59,.10); }
+.route-lp i, .mini i { display: block; height: 14px; border-radius: 3px; background: var(--rule); }
+.route-lp i.is-fv { height: 56px; background: var(--accent-soft); }
+.route-lp i.is-short { width: 60%; }
+.route-lp i.is-btn, .mini i.is-btn { width: 70%; height: 12px; margin-inline: auto; border-radius: 999px; background: var(--accent); }
+.route-done { width: 130px; height: 125px; display: grid; align-content: center; justify-items: center; gap: 8px; border-radius: 8px; background: var(--paper); color: var(--ink); font-family: var(--round); font-size: .85rem; font-weight: 700; text-align: center; line-height: 1.4; box-shadow: 0 2px 8px rgba(43,48,59,.10); }
+.route-check { width: 32px; height: 32px; border-radius: 50%; background: var(--accent); position: relative; }
+.route-check::after { content: ""; position: absolute; left: 11px; top: 7px; width: 8px; height: 14px; border-right: 3px solid #fff; border-bottom: 3px solid #fff; transform: rotate(45deg); }
+
+/* Webサイトとの比較 */
+.mock { width: 260px; max-width: 100%; border-radius: 8px; overflow: hidden; background: var(--paper); box-shadow: 0 2px 8px rgba(43,48,59,.10); font-family: var(--round); }
+.mock-head { display: flex; align-items: center; justify-content: space-between; gap: 6px; min-height: 30px; padding: 6px 10px; border-bottom: 1px solid var(--rule); }
+.mock-head b { font-size: .7rem; white-space: nowrap; }
+.mock-nav { display: flex; gap: 4px; flex-wrap: wrap; justify-content: flex-end; }
+.mock-nav i, .mock-links i { font-style: normal; font-size: .52rem; color: var(--accent-text); white-space: nowrap; }
+.mock-body { display: grid; justify-items: center; gap: 10px; padding: 10px; }
+.mock-body .is-photo, .sp-photo { display: block; width: 100%; height: 90px; border-radius: 4px; background: linear-gradient(135deg, #cfe3ff, #fff1bf); }
+.mock-links { display: flex; gap: 10px; }
+.mock-one { font-size: .7rem; padding: 5px 16px; }
+
+/* 構成の順番 */
+.stack { list-style: none; width: min(100%, 26rem); margin-inline: auto; display: grid; gap: 6px; counter-reset: st; }
+.stack li { counter-increment: st; display: grid; grid-template-columns: 2rem 7.5rem minmax(0, 1fr); align-items: center; gap: 8px; padding: 10px 14px; border-radius: 8px; background: var(--paper); font-size: var(--fs-sm); }
+.stack li::before { content: counter(st); font-family: var(--round); font-weight: 700; color: var(--faint); }
+.stack-k { font-family: var(--round); font-weight: 700; }
+.stack-v { color: var(--mute); }
+.stack li.is-fv { padding-block: 18px; background: var(--accent-tint); }
+.stack li.is-cta { background: var(--accent); color: #fff; }
+.stack li.is-cta::before, .stack li.is-cta .stack-v { color: #fff; }
+@media (max-width: 480px) { .stack li { grid-template-columns: 1.5rem minmax(0, 1fr); } .stack-v { grid-column: 2; } }
+
+/* 最初の画面（スマートフォン） */
+.sp { position: relative; width: 180px; aspect-ratio: 9 / 16; display: grid; grid-template-rows: 46% 1fr; overflow: hidden; border: 6px solid var(--ink); border-radius: 22px; background: var(--paper); font-family: var(--round); }
+.sp .sp-photo { height: 100%; border-radius: 0; }
+.sp.is-name { grid-template-rows: 1fr; }
+.sp-name { position: absolute; inset: 0; display: grid; place-items: center; font-size: 1.4rem; color: var(--ink); }
+.sp-text { display: grid; justify-items: center; align-content: center; gap: 6px; padding: 8px; text-align: center; }
+.sp-logo { font-size: .55rem; color: var(--mute); }
+.sp-title { font-size: 1.15rem; line-height: 1.25; color: var(--ink); }
+.sp-sub { font-size: .55rem; color: var(--mute); }
+.sp-btn { margin-top: 4px; font-size: .62rem; padding: 5px 12px; }
+
+/* ボタンの位置 */
+.mini { width: 110px; display: grid; gap: 6px; padding: 10px; border-radius: 8px; background: var(--paper); box-shadow: 0 2px 8px rgba(43,48,59,.10); }
+.mini i.is-fv { position: relative; height: 54px; background: var(--accent-soft); }
+.mini i.is-fv s { position: absolute; left: 15%; right: 15%; bottom: 8px; height: 10px; border-radius: 999px; background: var(--accent); }
+.route { align-items: flex-start; }
+.route-step { grid-template-rows: 190px auto; align-items: center; }
+.route-arrow { margin-top: 83px; }

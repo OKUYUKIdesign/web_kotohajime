@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>LP制作① 構成を知る｜WEBデザインことはじめ</title>
+<meta name="description" content="LPとは何か、LPのゴール、よくある構成の順番、最初の画面、申し込みボタンの置き方。LPの構成の考え方">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Maru+Gothic:wght@500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="inner">
+    <a class="site-name" href="./">
+      <span class="mark"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 1.5v12l3.3-3 2.2 4.6 2-1-2.2-4.5H13z"/></svg></span>
+      <span>WEBデザインことはじめ</span>
+    </a>
+    <nav class="head-nav" aria-label="サイト">
+      <a href="./">トップ</a>
+      <a href="./#lessons" aria-current="page">テーマ一覧</a>
+      <a href="./#links">参考リンク</a>
+    </nav>
+  </div>
+</header>
+
+<div class="layout">
+
+  <!-- ===== 目次 ===== -->
+  <details class="toc" open>
+    <summary><span class="dot"></span>WEBデザインことはじめ<span class="toggle"></span></summary>
+    <div class="toc-body">
+      <a class="toc-top" href="./">トップページ</a>
+
+      <div class="toc-item"><a class="toc-head" href="lesson01.html"><span class="toc-no">01</span><span class="toc-title">この講座について／Webデザインの基礎</span></a></div>
+      <div class="toc-item"><a class="toc-head" href="lesson02.html"><span class="toc-no">02</span><span class="toc-title">バナー制作① 文字で伝える</span></a></div>
+      <div class="toc-item"><a class="toc-head" href="lesson03.html"><span class="toc-no">03</span><span class="toc-title">バナー制作② 写真で伝える</span></a></div>
+      <div class="toc-item"><a class="toc-head" href="lesson04.html"><span class="toc-no">04</span><span class="toc-title">バナー制作③ チラシから作る</span></a></div>
+      <div class="toc-item is-current">
+        <a class="toc-head" href="lesson05.html" aria-current="page"><span class="toc-no">05</span><span class="toc-title">LP制作① 構成を知る</span></a>
+        <ul class="toc-parts">
+          <li><a href="#lp"><span class="n">1</span><span>LPとは</span></a></li>
+          <li><a href="#goal"><span class="n">2</span><span>ゴール</span></a></li>
+          <li><a href="#order"><span class="n">3</span><span>構成</span></a></li>
+          <li><a href="#fv"><span class="n">4</span><span>最初の画面</span></a></li>
+          <li><a href="#cta"><span class="n">5</span><span>ボタン</span></a></li>
+          <li><a href="#make"><span class="n">6</span><span>構成を考える</span></a></li>
+        </ul>
+      </div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">06</span><span class="toc-title">LP制作② ワイヤーフレーム</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">07</span><span class="toc-title">LP制作③ デザイン</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">08</span><span class="toc-title">LP制作④ 仕上げ</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">09</span><span class="toc-title">Webサイト制作① 企画</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">10</span><span class="toc-title">Webサイト制作② 設計</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">11</span><span class="toc-title">Webサイト制作③ トップページ</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">12</span><span class="toc-title">Webサイト制作④ 下層ページ・スマートフォン版</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">13</span><span class="toc-title">Webサイト制作⑤ 仕上げ</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">14</span><span class="toc-title">コーディング体験① HTMLとCSSの仕組み</span></span></div>
+      <div class="toc-item is-soon"><span class="toc-head"><span class="toc-no">15</span><span class="toc-title">コーディング体験② デザインをコードで再現</span></span></div>
+    </div>
+  </details>
+
+  <!-- ===== 本文 ===== -->
+  <main class="main">
+    <nav class="crumbs" aria-label="パンくずリスト"><a href="./">トップ</a><span>05 LP制作① 構成を知る</span></nav>
+
+    <header class="page-head">
+      <span class="no">05</span>
+      <h1 class="page-title">LP制作① 構成を知る</h1>
+    </header>
+    <p class="dates">最終更新日：2026/11/09</p>
+
+    <!-- ===== LPとは ===== -->
+    <section class="part" id="lp">
+      <p class="part-label">LPとは</p>
+      <h2 class="msg">LPは広告をクリックした先のページ</h2>
+      <p class="say">広告をクリックした人が最初に見るページをランディングページ（LP）といいます。</p>
+
+      <figure class="fig">
+        <div class="route" aria-hidden="true">
+          <div class="route-step">
+            <div class="route-bn"><span class="route-bn-k">夏期講習</span><span class="route-bn-t">無料体験<br>受付中</span><span class="route-btn">くわしく見る</span></div>
+            <span class="cap">バナー</span>
+          </div>
+          <span class="route-arrow"></span>
+          <div class="route-step">
+            <div class="route-lp"><i class="is-fv"></i><i></i><i></i><i class="is-short"></i><i></i><i class="is-btn"></i></div>
+            <span class="cap is-after">LP</span>
+          </div>
+          <span class="route-arrow"></span>
+          <div class="route-step">
+            <div class="route-done"><span class="route-check"></span><span>申し込み<br>完了</span></div>
+            <span class="cap">申し込み完了</span>
+          </div>
+        </div>
+        <figcaption>バナーで興味をもった人を、LPで申し込みまで案内します。</figcaption>
+      </figure>
+    </section>
+
+    <!-- ===== ゴール ===== -->
+    <section class="part" id="goal">
+      <p class="part-label">ゴール</p>
+      <h2 class="msg">LPのゴールは1つ</h2>
+
+      <figure class="fig">
+        <div class="pair" aria-hidden="true">
+          <div class="pair-cell">
+            <div class="mock">
+              <div class="mock-head"><b>奥村義塾</b><span class="mock-nav"><i>教室案内</i><i>講師</i><i>料金</i><i>ブログ</i><i>アクセス</i></span></div>
+              <div class="mock-body"><i class="is-photo"></i><span class="mock-links"><i>お知らせ</i><i>合格体験記</i><i>求人</i></span></div>
+            </div>
+            <span class="cap">Webサイト</span>
+          </div>
+          <div class="pair-cell">
+            <div class="mock">
+              <div class="mock-head"><b>奥村義塾</b></div>
+              <div class="mock-body"><i class="is-photo"></i><span class="mock-one">無料体験に申し込む</span></div>
+            </div>
+            <span class="cap is-after">LP</span>
+          </div>
+        </div>
+        <figcaption>Webサイトはいろいろな目的で見られます。LPは1つの行動のために作るので、ほかのページへのリンクは少なくします。</figcaption>
+      </figure>
+    </section>
+
+    <!-- ===== 構成 ===== -->
+    <section class="part" id="order">
+      <p class="part-label">構成</p>
+      <h2 class="msg">よくある順番で並べる</h2>
+
+      <figure class="fig">
+        <ol class="stack">
+          <li class="is-fv"><span class="stack-k">最初の画面</span><span class="stack-v">何のページか、何をすればいいか</span></li>
+          <li><span class="stack-k">悩み</span><span class="stack-v">読む人の困りごと</span></li>
+          <li><span class="stack-k">解決</span><span class="stack-v">それがどう解決するか</span></li>
+          <li><span class="stack-k">特長</span><span class="stack-v">ほかとちがうところ</span></li>
+          <li><span class="stack-k">声</span><span class="stack-v">使った人の感想や実績</span></li>
+          <li><span class="stack-k">料金・日程</span><span class="stack-v">いくらで、いつか</span></li>
+          <li><span class="stack-k">よくある質問</span><span class="stack-v">申し込む前の不安に答える</span></li>
+          <li class="is-cta"><span class="stack-k">申し込み</span><span class="stack-v">ボタンやフォーム</span></li>
+        </ol>
+        <figcaption>上から読むと「気になる → わかる → 安心する → 申し込む」の流れになります。</figcaption>
+      </figure>
+    </section>
+
+    <!-- ===== 最初の画面 ===== -->
+    <section class="part" id="fv">
+      <p class="part-label">最初の画面</p>
+      <h2 class="msg">最初の画面で何のページかを伝える</h2>
+
+      <figure class="fig">
+        <div class="pair" aria-hidden="true">
+          <div class="pair-cell">
+            <div class="sp is-name"><div class="sp-photo"></div><b class="sp-name">奥村義塾</b></div>
+            <span class="cap">名前だけ</span>
+          </div>
+          <div class="pair-cell">
+            <div class="sp">
+              <div class="sp-photo"></div>
+              <div class="sp-text">
+                <span class="sp-logo">奥村義塾</span>
+                <b class="sp-title">夏期講習<br>無料体験</b>
+                <span class="sp-sub">中学生｜1回90分｜1教科から</span>
+                <span class="sp-btn">無料体験に申し込む</span>
+              </div>
+            </div>
+            <span class="cap is-after">何のページかわかる</span>
+          </div>
+        </div>
+        <figcaption>スマートフォンでLPを開いて、最初に見える範囲です。誰のための何のページか、何をすればいいかを入れます。</figcaption>
+      </figure>
+    </section>
+
+    <!-- ===== ボタン ===== -->
+    <section class="part" id="cta">
+      <p class="part-label">ボタン</p>
+      <h2 class="msg">申し込みボタンは途中と最後に置く</h2>
+
+      <figure class="fig">
+        <div class="pair" aria-hidden="true">
+          <div class="pair-cell">
+            <div class="mini"><i class="is-fv"></i><i></i><i></i><i></i><i></i><i></i><i class="is-btn"></i></div>
+            <span class="cap">最後だけ</span>
+          </div>
+          <div class="pair-cell">
+            <div class="mini"><i class="is-fv"><s></s></i><i></i><i></i><i class="is-btn"></i><i></i><i></i><i class="is-btn"></i></div>
+            <span class="cap is-after">途中と最後</span>
+          </div>
+        </div>
+        <figcaption>読んでいる途中で申し込みたくなった人が、すぐに押せるようにします。</figcaption>
+      </figure>
+    </section>
+
+    <!-- ===== やってみよう ===== -->
+    <section class="part" id="make">
+      <p class="part-label">やってみよう</p>
+      <h2 class="msg">LPの構成を考えてみよう</h2>
+
+      <figure class="fig">
+        <p class="ref-k">材料（クライアントの要望）</p>
+        <ul class="memo">
+          <li>中学生向けの学習塾「奥村義塾」</li>
+          <li>夏期講習の無料体験の申し込みを受け付けたい</li>
+          <li>無料体験は1回90分で教科を1つ選べる</li>
+          <li>夏期講習は2027年7月22日（木）から8月27日（金）まで</li>
+          <li>受講料は1教科12,000円（90分×8回）</li>
+          <li>教科は英語・数学・国語・理科・社会</li>
+          <li>1クラス8人までの少人数</li>
+          <li>学校の教科書に合わせて1学期の復習ができる</li>
+          <li>自習室は毎日無料で使える</li>
+          <li>夏の学習計画を保護者と一緒に立てる面談がある</li>
+          <li>なみまち駅から歩いて3分</li>
+          <li>生徒と保護者の声をのせたい（内容は仮でよい）</li>
+          <li>申し込みはWebのフォームから</li>
+        </ul>
+
+        <p class="ref-k">決まり</p>
+        <dl class="spec">
+          <div><dt>目的</dt><dd>無料体験に申し込んでもらう</dd></div>
+          <div><dt>見る人</dt><dd>中学生とその保護者</dd></div>
+          <div><dt>作るもの</dt><dd>ブロックの順番と、それぞれに入れる内容</dd></div>
+        </dl>
+      </figure>
+    </section>
+
+    <nav class="pager" aria-label="ページ送り">
+      <a class="pg pg-prev" href="lesson04.html"><span class="pg-k">前</span><span class="pg-t">04 バナー制作③ チラシから作る</span></a>
+      <div class="pg pg-next is-soon"><span class="pg-k">次（準備中）</span><span class="pg-t">06 LP制作② ワイヤーフレーム</span></div>
+    </nav>
+  </main>
+</div>
+
+<footer class="site-foot">
+  <div class="inner">
+    <span>WEBデザインことはじめ</span>
+    <span>Copyright 2026 Okuyuki All Rights Reserved.</span>
+  </div>
+</footer>
+
+<script src="js/budoux-ja.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
